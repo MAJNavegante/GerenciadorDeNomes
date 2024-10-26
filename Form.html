@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Fila de Atendimento</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Sistema de Fila de Atendimento</h1>
+    
+    <label for="nomePaciente">Nome do Paciente:</label>
+    <input type="text" id="nomePaciente" placeholder="Insira o nome do paciente">
+    
+    <button onclick="adicionarPaciente()">Adicionar à Fila</button>
+    
+    <button onclick="atendimentoPrioritario()">Atendimento Prioritário</button>
+    <button onclick="proximoPaciente()">Próximo Paciente</button>
+
+    <h2>Fila de Espera</h2>
+    <div id="fila"></div>
+    
+    <h2>Paciente em Atendimento</h2>
+    <div id="emAtendimento"></div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
